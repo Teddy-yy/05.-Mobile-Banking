@@ -35,19 +35,189 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>
+<body style="margin-bottom: 300px;">
     <header class="header">
         <div class="container">
-            <!-- Logo -->
-            <a href="#!">
-                <img src="./assets/icon/logo.svg" alt="" class="logo">
-            </a>
+            <div class="header-top">
+                <div class="header-top__left">
+                    <!-- Logo -->
+                    <a href="#!">
+                        <img src="./assets/icon/logo.svg" alt="" class="logo">
+                    </a>
+        
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item"><a href="#!" class="navbar__link navbar__link--active">Home</a></li>
+                            <li class="navbar__item"><a href="#!" class="navbar__link">Products</a></li>
+                            <li class="navbar__item"><a href="#!" class="navbar__link">Features</a></li>
+                            <li class="navbar__item"><a href="#!" class="navbar__link">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-            <nav class="navbar">
-                <ul>
-                    li
-                </ul>
-            </nav>
+                <div class="header-actions">
+                    <button class="login-btn">Login</button>
+                    <button class="btn btn-1 signup-btn">Sign Up</button>
+                </div>
+            </div>
+
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__content">
+                            <span class="label">Digital Smart Wallet</span>
+                            <h1 class="hero__heading heading">Digital <span>Payment</span> For Everyone.</h1>
+                            <p class="hero__desc desc">We bring together eveything that’s required to build websites and apps that accept payments and send payouts globally. We are the best platform.</p>
+                            <form action="" class="hero__form">
+                                <input type="email" class="hero__input" placeholder="Your email address">
+                                <button class="btn hero__btn">Get Started</button>
+                            </form>
+                            <p class="hero__note">*We’ll respect the inbox and never share your email.</p>
+                        </div>
+                        <div class="hero__media">
+                            <div class="phone">
+                                <div class="card">
+                                    <div class="card__row">
+                                        <div class="card__balance">
+                                            <span class="card__balance-label">Main Balance</span>
+                                            <span class="card__balance-amount">$78,355.17</span>
+                                        </div>
+                                        <div class="card__logo">
+                                            <div class="circle circle--left">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="#FE6565"/>
+                                                </svg>
+                                            </div>
+                                            <div class="circle--middle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 10 20" fill="none">
+                                                <path d="M5 0.251953C1.97186 2.43031 0 5.98481 0 9.99986C0 14.0149 1.97186 17.5694 5 19.7478C13 11.1461 8.33333 3.16653 5 0.251953Z" fill="#FFB228"/>
+                                                </svg>
+                                            </div>
+                                            <div class="circle circle--right">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="12" fill="#FEEF65"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__row">
+                                        <div class="card__expiry">
+                                            <span class="card__label">VALID THUR</span>
+                                            <span class="card__text">08/22</span>
+                                        </div>
+                                        <div class="card__holder">
+                                            <span class="card__label">CARD HOLDER</span>
+                                            <span class="card__text">Md Moshqur Alam</span>
+                                        </div>
+                                    </div>
+                                    <div class="card__deco">
+                                        <div class="card__deco-top">
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                        </div>
+                                        <div class="card__deco-bottom">
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                            <div class="card__deco--round"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="transaction">
+                                    <div class="transaction__row">
+                                        <h3 class="transaction__title">Transactions</h3>
+                                        <img src="./assets/icon/filter.svg" alt="" class="transaction__top-icon">
+                                    </div>
+                                    <div class="transaction__list">
+                                        <!-- Row 1 -->
+                                        <div class="transaction__row">
+                                            <figure class="transaction__img">
+                                                <img src="./assets/icon/income.svg" alt="" class="transaction__icon">
+                                            </figure>
+                                            <div class="transaction__info">
+                                                <p class="transaction__name">Received Money</p>
+                                                <p class="transaction__desc">email@gmail.com</p>
+                                            </div>
+                                            <div class="transactions__meta">
+                                                <span class="transactions__amount">+ $1,600</span>
+                                                <span class="transactions__date">Sep 23</span>
+                                            </div>
+                                        </div>
+                                        <!-- Row 2 -->
+                                        <div class="transaction__row">
+                                            <figure class="transaction__img">
+                                                <img src="./assets/icon/paper-plane.svg" alt="" class="transaction__icon">
+                                            </figure>
+                                            <div class="transaction__info">
+                                                <p class="transaction__name">Send Money</p>
+                                                <p class="transaction__desc">Airbnb Payment</p>
+                                            </div>
+                                            <div class="transactions__meta">
+                                                <span class="transactions__amount">- $600</span>
+                                                <span class="transactions__date">Sep 23</span>
+                                            </div>
+                                        </div>
+                                        <!-- Row 3 -->
+                                        <div class="transaction__row">
+                                            <figure class="transaction__img">
+                                                <img src="./assets/icon/received.svg" alt="" class="transaction__icon">
+                                            </figure>
+                                            <div class="transaction__info">
+                                                <p class="transaction__name">Received Money</p>
+                                                <p class="transaction__desc">Upwork Earning</p>
+                                            </div>
+                                            <div class="transactions__meta">
+                                                <span class="transactions__amount">+$1,600</span>
+                                                <span class="transactions__date">Sep 23</span>
+                                            </div>
+                                        </div>
+                                        <!-- Row 4 -->
+                                        <div class="transaction__row">
+                                            <figure class="transaction__img">
+                                                <img src="./assets/icon/wallet.svg" alt="" class="transaction__icon">
+                                            </figure>
+                                            <div class="transaction__info">
+                                                <p class="transaction__name">Pay Bill</p>
+                                                <p class="transaction__desc">Electricity Bill</p>
+                                            </div>
+                                            <div class="transactions__meta">
+                                                <span class="transactions__amount">- $600</span>
+                                                <span class="transactions__date">Sep 23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone__deco">
+                                    <div class="deposit">
+                                        <img src="./assets/icon/deposit.svg" alt="" class="deposit__icon">
+                                        <span class="deposit__title">Deposit</span>
+                                        <span class="deposit__value">$32000</span>
+                                    </div>
+                                    <div class="interest">
+                                        <span class="interest__value">0%</span>
+                                        <span class="interest__text">Interest</span>
+                                    </div>
+                                    <div class="secured-fund">
+                                        <img src="./assets/icon/secured.svg" alt="" class="secured-fund__icon">
+                                        <div class="secured-fund__info">
+                                            <span class="secured-fund__value">$1.310</span>
+                                            <span class="secured-fund__text">SECURED FUNDS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </header>
 </body>
