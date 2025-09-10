@@ -637,27 +637,32 @@ a, button{
     margin-top: 5px;
 }
 
-/* Payment Card */
-.payment-card{
+/* Features */
+.features{
     padding: 80px 0;
 }
 
-.payment-card__inner{
+.features__row{
     display: flex;
     align-items: center;
     column-gap: 130px;
 }
 
-.payment-card__content{
+.features__row + .features__row{
+    margin-top: 160px;
+    justify-content: space-between;
+}
+
+.features__content{
     width: 40%;
 }
 
-.payment-card__list{
+.features__list{
     margin-top: 28px;
     margin-bottom: 38px;
 }
 
-.payment-card__item{
+.features__item{
     display: flex;
     align-items: center;
     column-gap: 12px;
@@ -665,7 +670,7 @@ a, button{
     color: var(--heading-color);
 }
 
-.payment-card__item::before{
+.features__item::before{
     content: '';
     display: inline-block;
     width: 12px;
@@ -674,56 +679,60 @@ a, button{
     background: var(--primary-color);
 }   
 
-.payment-card__media{
+.features__media{
     position: relative;
 }
 
-.payment-card .payment-card__btn{
+.features__row:nth-child(2) .features__media{
+    padding-top: 169px;
+}
+
+.features .features__btn{
     --height: 58px;
     min-width: 149px;
 }
 
-.payment-card__card{
+.features__card{
     padding: 38px;
     width: 482px;
     height: 322px;
 }
 
-.payment-card__card .card__row:nth-child(2){
+.features__card .card__row:nth-child(2){
     margin-top: 98px;
 }
 
-.payment-card__card .card__balance{
+.features__card .card__balance{
     display: flex;
     flex-direction: column;
 }
 
-.payment-card__card .card__balance-label{
+.features__card .card__balance-label{
     font-size: 2.4rem;
 }
 
-.payment-card__card .card__balance-amount{
+.features__card .card__balance-amount{
     margin-top: 10px;
     font-size: 3.2rem;
     z-index: 1;
 }
 
-.payment-card__card .card__label{
+.features__card .card__label{
     font-size: 2rem;
 }
 
-.payment-card__card .card__text{
+.features__card .card__text{
     margin-top: 4px;
     font-size: 2.2rem;
 }
 
-.payment-card__card .card__deco-top{
+.features__card .card__deco-top{
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-.payment-card__card .card__deco-bottom{
+.features__card .card__deco-bottom{
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -772,7 +781,7 @@ a, button{
     font-weight: 600;
 }
 
-.payment-card .transaction{
+.features .transaction{
     position: absolute;
     top: -48px;
     right: -88px;
@@ -787,23 +796,107 @@ a, button{
     animation: up-down 2s ease-in-out infinite;
 }
 
-.payment-card .transaction__img{
+.features .transaction__img{
     background: rgba(218, 100, 100, 0.1) !important;
 }
 
-.payment-card .transaction__name{
+.features .transaction__name{
     font-size: 1.2rem;
 }
 
-.payment-card .transactions__amount{
+.features .transaction__amount{
     font-size: 1.6rem;
     font-weight: 400;
 }
 
-.payment-card .transactions__date{
+.features .transaction__date{
     margin-top: 3px;
 }
 
+.features__bg{
+    display: block;
+}
+
+.features__img{
+    position: absolute;
+    left: 29px;
+    bottom: 0px;
+    width: 413px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.features__payment--title{
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.features__payment{
+    position: absolute;
+    right: -74px;
+    bottom: 57px;
+    padding: 28px;
+    border-radius: 4px;
+    background-color: #FFF;
+    filter: drop-shadow(0 44px 48px rgba(0, 0, 0, 0.10));
+}
+
+.features__payment--list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.features__payment--item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #F2F2FA;
+}
+
+.features__payment--item:nth-child(6){
+    background-color: #F9EA63;
+    transition: opacity .25s;
+}
+
+.features__payment--item:nth-child(6):hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.features__payment--item:nth-child(6):before,
+.features__payment--item:nth-child(6)::after{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    background-color: var(--heading-color);
+}
+
+.features__payment--item:nth-child(6)::after{
+    rotate: 90deg;
+}
+
+.features__deco{
+    position: absolute;
+    bottom: 222px;
+    right: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    animation: scale 2s ease-in-out infinite;
+}
 
 
 
