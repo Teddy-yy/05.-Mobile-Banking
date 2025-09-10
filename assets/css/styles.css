@@ -166,7 +166,7 @@ a, button{
     height: 1px;
     margin: 0 auto;
     border-radius: 0.5px;
-    background: #7264D6;
+    background: var(--primary-color);
 }
 
 .login-btn{
@@ -275,50 +275,27 @@ a, button{
 }
 
 .card span{
-    display: block;
+    display: inline-block;
 }
 
 .card__balance-label{
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     z-index: 1;
+    line-height: normal;
 }
 
 .card__balance-amount{
-    margin-top: 12px;
+    margin-top: 2px;
     font-size: 2.2rem;
     font-weight: 700;
+    line-height: normal;
 }
 
 .card__logo{
     position: relative;
     display: flex;
     margin-left: auto;
-}
-
-.circle{
-    position: relative;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-}
-
-.circle--left{
-    background: #EB001B;
-    z-index: 1;
-}
-
-.circle--middle {
-    position: absolute;
-    top: 2px;
-    left: 16px;
-    z-index: 2;
-}
-
-.circle--right{
-    background: #F79E1B;
-    margin-left: -8px;
-    z-index: 1;
 }
 
 .card__holder{
@@ -329,92 +306,26 @@ a, button{
 
 .card__label{
     font-size: 1rem;
+    line-height: normal;
 }
 
 .card__text{
     margin-top: 5px;
     font-size: 1.2rem;
     font-weight: 600;
+    line-height: normal;
 }
 
-.card__deco--round{
+.card__deco-top{
     position: absolute;
-    width: 77px;
-    height: 77px;
-    border-radius: 50%;
-}
-
-.card__deco-top .card__deco--round{
-    border: 1px solid #9487EA;  
-}
-
-.card__deco-top .card__deco--round:nth-child(1){
-    top: -43px;
     left: 1px;
+    top: 0;
 }
 
-.card__deco-top .card__deco--round:nth-child(2){
-    top: -47px;
-    left: 8px;
-}
-
-.card__deco-top .card__deco--round:nth-child(3){
-    top: -51px;
-    left: 15px;
-}
-
-.card__deco-top .card__deco--round:nth-child(4){
-    top: -55px;
-    left: 22px;
-}
-
-.card__deco-top .card__deco--round:nth-child(5){
-    top: -59px;
-    left: 29px;
-}
-
-.card__deco-bottom .card__deco--round:nth-child(1){
-    right: 53px;
-    bottom: -3px;
-}
-
-.card__deco-bottom .card__deco--round:nth-child(2){
-    right: 46px;
-    bottom: -8px;
-}
-
-.card__deco-bottom .card__deco--round:nth-child(3){
-    right: 39px;
-    bottom: -13px;
-}
-
-.card__deco-bottom .card__deco--round:nth-child(4){
-    right: 32px;
-    bottom: -18px;
-}
-
-.card__deco-bottom .card__deco--round:nth-child(5){
-    right: 25px;
-    bottom: -23px;
-}
-
-.card__deco-bottom .card__deco--round:nth-child(6){
-    right: 18px;
-    bottom: -28px;
-}
-
-.card__deco-bottom .card__deco--round:nth-child(7){
-    right: 11px;
-    bottom: -33px;
-}
-
-.card__deco-bottom .card__deco--round:nth-child(8){
-    right: 4px;
-    bottom: -38px;
-}
-
-.card__deco-bottom .card__deco--round{
-    border: 1px solid #6657D2;
+.card__deco-bottom{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
 }
 
 .transaction{
@@ -500,7 +411,7 @@ a, button{
 
 .deposit{
     position: absolute;
-    top: 104px;
+    top: 113px;
     left: -100px;
     display: flex;
     align-items: center;
@@ -651,7 +562,7 @@ a, button{
     width: 64px;
     height: 64px;
     border-radius: 8px;
-    background: #7264D6;
+    background: var(--primary-color);
     animation: up-down 2s ease-in-out infinite;
 }
 
@@ -725,6 +636,178 @@ a, button{
     font-size: 1.2rem;
     margin-top: 5px;
 }
+
+/* Payment Card */
+.payment-card{
+    padding: 80px 0;
+}
+
+.payment-card__inner{
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.payment-card__content{
+    width: 40%;
+}
+
+.payment-card__list{
+    margin-top: 28px;
+    margin-bottom: 38px;
+}
+
+.payment-card__item{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 18px;
+    color: var(--heading-color);
+}
+
+.payment-card__item::before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}   
+
+.payment-card__media{
+    position: relative;
+}
+
+.payment-card .payment-card__btn{
+    --height: 58px;
+    min-width: 149px;
+}
+
+.payment-card__card{
+    padding: 38px;
+    width: 482px;
+    height: 322px;
+}
+
+.payment-card__card .card__row:nth-child(2){
+    margin-top: 98px;
+}
+
+.payment-card__card .card__balance{
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-card__card .card__balance-label{
+    font-size: 2.4rem;
+}
+
+.payment-card__card .card__balance-amount{
+    margin-top: 10px;
+    font-size: 3.2rem;
+    z-index: 1;
+}
+
+.payment-card__card .card__label{
+    font-size: 2rem;
+}
+
+.payment-card__card .card__text{
+    margin-top: 4px;
+    font-size: 2.2rem;
+}
+
+.payment-card__card .card__deco-top{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.payment-card__card .card__deco-bottom{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.income{
+    position: absolute;
+    right: -88px;
+    bottom: -55px;
+    width: 120px;
+    padding: 14px 15px 15px;
+    border-radius: 16px;
+    background: #439F90;
+    color: #FFF;
+    animation: scale 2s ease-in-out infinite;
+}
+
+.income__icon--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.income__icon{
+    width: 14.279px;
+    height: 14.479px;
+}
+
+.income span{
+    display: block;
+    line-height: normal;
+}
+
+.income__text{
+    margin-top: 14px;
+    font-size: 1.2rem;
+}
+
+.income__amount{
+    margin-top: 6px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.payment-card .transaction{
+    position: absolute;
+    top: -48px;
+    right: -88px;
+    width: 276px;
+    font-family: 'Inter', sans-serif;
+    line-height: normal;
+    margin-top: 0;
+    padding: 23px 13px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.07);
+    animation: up-down 2s ease-in-out infinite;
+}
+
+.payment-card .transaction__img{
+    background: rgba(218, 100, 100, 0.1) !important;
+}
+
+.payment-card .transaction__name{
+    font-size: 1.2rem;
+}
+
+.payment-card .transactions__amount{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.payment-card .transactions__date{
+    margin-top: 3px;
+}
+
+
+
+
+
 
 
 
