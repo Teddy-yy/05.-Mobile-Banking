@@ -898,6 +898,133 @@ a, button{
     animation: scale 2s ease-in-out infinite;
 }
 
+/* Feedback */
+.feedback{
+    position: relative;
+    padding: 80px 0;
+}
+
+.feedback__top{
+    text-align: center;
+}
+
+.feedback__desc{
+    max-width: 435px;
+    margin: 18px auto 0;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.feedback__body{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.feedback__quote{
+    position: relative;
+    max-width: 570px;
+    padding: 42px 28px;
+    border-radius: 16px;
+    background-color: #FFF;
+    filter: drop-shadow(0 0 2px #DFE2E8);
+    text-align: center;
+    transition: filter 0.5s;
+}
+
+.feedback__quote::after{
+    position: absolute;
+    left: 50%;
+    bottom: -69px;
+    transform: translateX(-50%);
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    rotate: 45deg;
+}
+
+.feedback__quote:hover{
+    filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.feedback__text{
+    position: relative;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.55; /* 154.545% */
+    z-index: 1;
+}
+
+.feedback__client{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.feedback__client--avatar{
+    position: relative;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    margin: 0 auto;  
+    overflow: hidden;  
+}
+
+.feedback__col:nth-child(1) .feedback__client--avatar{
+    background: #4AB5E3;
+}
+
+.feedback__col:nth-child(2) .feedback__client--avatar{
+    background: #439F90;
+}
+
+.feedback__client--img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.feedback__client--name{
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.feedback__client--desc{
+    margin-top: 2px;
+    margin-bottom: 38px;
+}
+
+.feedback__footer{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.feedback__control{
+    width: 22px;
+    height: 6px;    
+    border-radius: 1px;
+    border: 1px solid #9B9FAB;
+}
+
+.feedback__control--active{
+    color: var(--primary-color);
+    background: currentColor;
+    border-color: currentColor;
+}
+
+
+
 
 
 
